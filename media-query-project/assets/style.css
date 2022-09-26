@@ -67,10 +67,14 @@ body {
 	font-size: 20px;
 }
 
+.upper .header header .fa-bars {
+	font-size: 30px;
+	display: none;
+}
+
 .upper .intro {
 	display: flex;
 	justify-content: center;
-	align-items: ;
 	width: 85%;
 }
 
@@ -109,12 +113,15 @@ body {
 	align-items: center;
 	gap: 40px;
 	width: 100%;
+	background-color: lightgrey;
+	padding-block: 50px;
 }
 
 .upper .projects .reach-out {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 95px;
 	width: 85%;
 }
 
@@ -131,6 +138,8 @@ body {
 	text-decoration: none;
 	padding: 10px 17.5px;
 	border-radius: 10px;
+	width: 200px;
+	text-align: center;
 }
 
 .upper .projects .display-images {
@@ -144,6 +153,7 @@ body {
 
 .projects .display-images > img {
 	width: 30%;
+	border-radius: 25px;
 }
 
 .container .footer {
@@ -176,13 +186,15 @@ body {
 	font-size: 25px;
 	line-height: 1.5;
 	font-weight: 700;
+	padding-bottom: 50px;
 }
 
 .footer .contacts .mail-or-call {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	width: 300px;
+	gap: 35px;
+	width: 370px;
 }
 
 .footer .contacts .mail-or-call > a:nth-of-type(1) {
@@ -192,6 +204,8 @@ body {
 	padding: 12.5px 17.5px;
 	border-radius: 10px;
 	font-size: 18px;
+	width: 160px;
+	text-align: center;
 }
 
 .contacts .mail-or-call a:nth-of-type(2) {
@@ -204,6 +218,7 @@ body {
 	border-radius: 10px;
 	color: #fff;
 	font-size: 18px;
+	width: 160px;
 }
 
 .footer .contacts > img:nth-of-type(1) {
@@ -258,4 +273,110 @@ body {
 	color: #fff;
 	font-size: 25px;
 	border-radius: 5px;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 900px) {
+	.upper .header > header {
+		width: 92.5%;
+	}
+
+	.upper .header header ul {
+		width: 450px;
+	}
+
+	.upper .intro, .upper .projects .reach-out {
+		width: 95%;
+	}
+
+	.upper .projects .reach-out > h3 > br {
+		display: none;
+	}
+
+	.upper .projects .reach-out > a {
+		font-size: 22px;
+	}
+
+	.footer .contacts {
+		width: 95%;
+		gap: 80px;
+	}
+
+	.footer .contacts > span > br {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.upper .header header nav {
+		display: none;
+	}
+	.upper .header header .fa-bars {
+		display: initial;
+	}
+	.upper .header > header {
+		width: 90%;
+	}
+
+	.upper .intro {
+		flex-direction: column;
+		width: 90%;
+		gap: 50px;
+	}
+
+	.intro .texts > span > br {
+		display: none;
+	}
+
+	.upper .projects .reach-out {
+		flex-direction: column;
+		align-items: initial;
+		width: 90%;
+		gap: 40px;
+	}
+
+	.upper .projects .display-images {
+		flex-direction: column;
+		gap: 40px;
+		width: 90%;
+	}
+
+	.projects .display-images > img {
+		width: 90%;
+	}
+
+	.footer .contacts {
+		flex-direction: column;
+		gap: 40px;
+		padding-block: 40px;
+		align-items: initial;
+		width: 90%;
+	}
+
+	.footer .contacts > span > br {
+		display: initial;
+	}
+
+	.footer .contacts > img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.footer .contacts > span > br {
+		display: none;
+	}
+
+	.footer .contacts .mail-or-call {
+		width: unset;
+		gap: 15px;
+	}
+
+	.contacts .mail-or-call a {
+		width: unset !important;
+		padding: 12px !important;
+		font-size: 13px !important;
+	}
 }
