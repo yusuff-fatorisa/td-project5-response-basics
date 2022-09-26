@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.container .upper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 75px;
+}
+
+.upper .header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90px;
+	text-transform: uppercase;
+	background-color: deepskyblue;
+	color: #fff;
+}
+
+.upper .header > header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+}
+
+.upper .header header > h2 {
+	font-size: 30px;
+}
+
+.upper .header header ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 500px;
+	list-style-type: none;
+}
+
+.upper .header header ul a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+.upper .intro {
+	display: flex;
+	justify-content: center;
+	align-items: ;
+	width: 85%;
+}
+
+.upper .intro .texts {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.intro .texts > h2 {
+	color: dodgerblue;
+	font-size: 42px;
+	text-transform: capitalize;
+}
+
+.intro .texts > span, .intro .texts > p {
+	opacity: 0.85;
+	font-size: 24px;
+	line-height: 1.5;
+	font-weight: 300;
+}
+
+.upper .intro .images {
+	flex-basis: 50%;
+}
+
+.upper .intro .images > img {
+	width: 100%;
+}
+
+.upper .projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+}
+
+.upper .projects .reach-out {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+}
+
+.upper .projects .reach-out > h3 {
+	color: dodgerblue;
+	font-size: 42px;
+	text-transform: capitalize;
+}
+
+.upper .projects .reach-out > a {
+	background-color: teal;
+	color: #fff;
+	font-size: 26px;
+	text-decoration: none;
+	padding: 10px 17.5px;
+	border-radius: 10px;
+}
+
+.upper .projects .display-images {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	width: 85%;
+}
+
+.projects .display-images > img {
+	width: 30%;
+}
+
+.container .footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: blue;
+	height: 500px;
+}
+
+.footer .contacts-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-basis: 50%;
+	background-color: dodgerblue;
+}
+
+.footer .contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+	height: 100%;
+	position: relative;
+}
+.footer .contacts > span {
+	color: #fff;
+	font-size: 25px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.footer .contacts .mail-or-call {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+}
+
+.footer .contacts .mail-or-call > a:nth-of-type(1) {
+	color: dodgerblue;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 12.5px 17.5px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+.contacts .mail-or-call a:nth-of-type(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background-color: mediumaquamarine;
+	padding: 12.5px 20px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.footer .contacts > img:nth-of-type(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.footer .contacts > img:nth-of-type(2) {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.footer .socials {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	gap: 40px;
+	color: #fff;
+}
+
+.footer .socials .prompt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.socials .prompt > p, .socials .prompt > a {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.socials .prompt > a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.socials .prompt .social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.prompt .social-links > a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	border-radius: 5px;
+}
