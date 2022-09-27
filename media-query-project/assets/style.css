@@ -221,6 +221,10 @@ body {
 	width: 160px;
 }
 
+.fa-mobile-screen {
+	font-size: 15px;
+}
+
 .footer .contacts > img:nth-of-type(1) {
 	position: absolute;
 	top: 0;
@@ -241,6 +245,7 @@ body {
 	flex-grow: 1;
 	gap: 40px;
 	color: #fff;
+	padding-block: 50px;
 }
 
 .footer .socials .prompt {
